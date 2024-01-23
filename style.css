@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(92, 240, 158);
+}
+.container {
+  text-align: center;
+}
+.player1 {
+  width: 50%;
+  float: left;
+  height: 350px;
+  padding: 100px;
+  background-color: #f57171;
+  margin-top: 0px;
+}
+.player2 {
+  width: 50%;
+  float: left;
+  height: 350px;
+  padding: 100px;
+  background-color: #a0a0e9;
+}
+.image {
+  margin: 0;
+}
+.win {
+  color: red;
+  animation-name: colorAnimate;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-duration: 0.25s;
+}
+@keyframes colorAnimate {
+  from {
+    color: red;
+  }
+  to {
+    color: green;
+  }
+}
+.scroll {
+  color: black;
+  background-color: white;
+  font-size: 22px;
+  border: 2px solid red;
+  border-radius: 23px;
+  padding: 8px;
+}
+.scroll:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 550px) and (min-width: 390px) {
+  .player1 {
+    font-size: 7px;
+    text-align: center;
+  }
+  .player2 {
+    font-size: 7px;
+    text-align: center;
+  }
+  .scroll{
+    color: black;
+  background-color: white;
+  font-size: 12px;
+  border: 2px solid red;
+  border-radius: 23px;
+  padding: 4px;
+
+  }
+}
+@media (max-width:404px){
+    .player1{
+        display: block;
+        width: 400px;
+    }
+    .player2{
+        display: block;
+        width: 400px;
+    }
+}
